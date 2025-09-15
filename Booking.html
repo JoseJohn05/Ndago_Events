@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/nav-underline.css"/>
+        <link rel="stylesheet" href="css/custom-icons.css"/>
+        <link rel="stylesheet" href="css/animated-bg.css"/>
+        <title>Book an Event</title>
+    </head>
+    <body class="animated-bg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Index.html">
+                    <img src="Images/Welcoming Logo for Ndago Event Gardens_20250611_212132_0000.png" alt="Navigation Logo" class="nav-logo me-2">
+                    Ndago Events
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="Index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Events.html">Events</a></li>
+                        <li class="nav-item"><button onclick="logIn()" class="btn btn-outline-success">SignIn</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="container py-5">
+            <section class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="booking-form" action="event_booking.php" method="post" class="p-4 border rounded bg-white shadow">
+                        <h3 class="mb-4 text-center">Book your Event today</h3>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="Name" class="form-control" placeholder="Full name" required autofocus/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="Email" class="form-control" placeholder="E-mail address" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="event" class="form-label">Select Event</label>
+                            <select id="event" name="events" class="form-select" required>
+                                <option value="">--Choose an event--</option>
+                                <option value="Birthday">Birthday</option>
+                                <option value="Camping">Camping</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Music Video">Music Video</option>
+                                <option value="Picnic">Picnic</option>
+                                <option value="Dating">Dating</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Prefered Date</label>
+                            <input type="date" id="date" name="Date" class="form-control" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="notes" class="form-label">Additional Notes</label>
+                            <textarea id="notes" name="Notes" rows="4" class="form-control" placeholder="Special requests or notes..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Submit Booking</button>
+                    </form>
+                </div>
+            </section>
+        </main>    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/events.js"></script>
+    </body>
+</html>

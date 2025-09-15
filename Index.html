@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/animated-bg.css"/>
+    <link rel="stylesheet" href="css/nav-underline.css"/>
+    <link rel="stylesheet" href="css/custom-icons.css"/>
+    <title>Ndago Events</title>
+</head>
+<body class="animated-bg">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/Welcoming Logo for Ndago Event Gardens_20250611_212132_0000.png" alt="Navigation Logo" class="nav-logo me-2">
+            Ndago Events
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <button onclick="logIn()" class="btn btn-outline-success ms-2">SignIn</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center position-relative">
+      <div class="row w-100">
+        <div class="col-md-4 d-flex flex-column justify-content-center text-white" style="z-index: 2">
+          <h1 class="display-4 fw-bold">Visit Ndago Event Gardens</h1>
+          <p class="lead">
+            Explore the untamed beauty where nature roars with life and flowers
+            dance with the trees.
+          </p>
+          <button class="btn btn-warning btn-lg see-more w-50" id="view-more">See More</button>
+        </div>
+        <div class="col-md-8 d-flex flex-column align-items-end position-relative" style="z-index: 2">
+          <div class="d-flex card-gallery gap-4 mt-5">
+            <div class="card bg-dark border-0 shadow"></div>
+            <div class="card bg-dark border-0 shadow"></div>
+            <div class="card bg-dark border-0 shadow"></div>
+          </div>
+          <div class="gallery-nav d-flex gap-3 mt-4">
+            <button class="btn btn-light nav-btn">
+              <i class="bi bi-arrow-left"></i>&#8592;
+            </button>
+            <button class="btn btn-light nav-btn">
+              <i class="bi bi-arrow-right"></i>&#8594;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="container-fluid bg-success text-center">Copyright@Ndago Events Management Company.co.mw</p>
+
+    <!-- Welcome Modal -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center mb-3">
+              <img src="Images/Poster - Welcome to Ndago Event Gardens.png" alt="Ndago Event Gardens Logo" style="max-width: 220px; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); background: #fff;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        var welcomeModal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+        welcomeModal.show();
+      });
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/Home.js"></script>
+</body>
+</html>

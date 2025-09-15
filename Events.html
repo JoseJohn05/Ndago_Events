@@ -1,0 +1,50 @@
+<!DOCTYPE hmtl> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/nav-underline.css"/>
+        <link rel="stylesheet" href="css/custom-icons.css"/>
+        <link rel="stylesheet" href="css/animated-bg.css"/>
+        <title>Events Hosted</title>
+    </head>
+    <body class="animated-bg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Index.html">
+                    <img src="Images/Welcoming Logo for Ndago Event Gardens_20250611_212132_0000.png" alt="Navigation Logo" class="nav-logo me-2">
+                    Ndago Events
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="Index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="Events.html">Events</a></li>
+                        <li class="nav-item"><button onclick="logIn()" class="btn btn-outline-success me-2">SignIn</button></li>
+                        <li class="nav-item"><button onclick="bookEvent()" class="btn btn-primary">Book Now</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="container py-5">
+            <section class="row justify-content-center">
+                <div class="col-md-8">
+                    <form class="d-flex mb-4">
+                        <input type="text" id="searchInput" class="form-control me-2" placeholder="Search events..." autofocus/>
+                        <button id="searchBtn" class="btn btn-outline-primary" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <div id="events-container" class="row events-grid"></div>
+                </div>
+            </section>
+        </main>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/events.js"></script>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/animated-bg.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom-icons.css">
+    <link rel="stylesheet" href="css/nav-underline.css">
+</head>
+<body class="animated-bg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="Index.html">
+          <img src="Images/Welcoming Logo for Ndago Event Gardens_20250611_212132_0000.png" alt="Navigation Logo" class="nav-logo me-2">
+          Ndago Events
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a href="Index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="Events.html">Events</a></li>
+          <li class="nav-item"><button onclick="logIn()" class="btn btn-outline-success ms-2">SignIn</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container py-4">
+      <!-- Image Gallery Section -->
+      <section class="gallery-section">
+        <div class="row mb-4">
+            <div class="container-fluid">
+              <div class="animated-text">
+                <h2 class="text-center">Experience the beauty of nature at the comfort of a breathtaking scenery!!</h2>
+            </div>
+            </div>
+        </div>
+          <h2 class="mb-3">Gallery</h2>
+          <div id="gallery" class="row row-cols-2 row-cols-md-4 g-3 gallery-grid">
+            <div class="col"><a href="Images/TreeView.jpg" target="_blank" aria-label="View Gallery Image 1"><img src="Images/TreeView.jpg" alt="Gallery Image 1" class="img-fluid rounded shadow"/></a></div>
+            <div class="col"><a href="Images/PicnicSheds.jpg" target="_blank" aria-label="View Gallery Image 2"><img src="Images/PicnicSheds.jpg" alt="Gallery Image 2" class="img-fluid rounded shadow"/></a></div>
+            <div class="col"><a href="Images/PicnicTableWithLights.jpg" target="_blank" aria-label="View Gallery Image 3"><img src="Images/PicnicTableWithLights.jpg" alt="Gallery Image 3" class="img-fluid rounded shadow"/></a></div>
+            <div class="col"><a href="Images/TreeAttachedBarstand.jpg" target="_blank" aria-label="View Gallery Image 4"><img src="Images/TreeAttachedBarstand.jpg" alt="Gallery Image 4" class="img-fluid rounded shadow"/></a></div>
+            <div class="col"><a href="Images/IMG_20250621_084355_672.jpg" target="_blank" aria-label="View Gallery Image 5"><img src="Images/IMG_20250621_084355_672.jpg" alt="Gallery Image 5" class="img-fluid rounded shadow"/></a></div>
+            <div class="col"><a href="Images/IMG_20250621_091317_509.jpg" target="_blank" aria-label="View Gallery Image 6"><img src="Images/IMG_20250621_091317_509.jpg" alt="Gallery Image 6" class="img-fluid rounded shadow"/></a></div>
+            <div class="col"><a href="Images/TyreChairs.jpg"><img src="Images/TyreChairs.jpg" alt="Gallery Image 7" class="img-fluid rounded shadow"/></a></div>
+            <div class="col"><a href="Images/RaisedFireplace.jpg" target="_blank" aria-label="View Gallery Image 8"><img src="Images/RaisedFireplace.jpg" alt="Gallery Image 8" class="img-fluid rounded shadow"/></a></div>
+            <div class="col"><a href="Images/GroundFireplace.jpg" target="_blank" aria-label="View Gallery Image 9"><img src="Images/GroundFireplace.jpg" alt="Gallery Image 9" class="img-fluid rounded shadow"/></a></div>
+            <div class="col"><a href="Images/DatePicnic.jpg" target="_blank" aria-label="View Gallery Image 10"><img src="Images/DatePicnic.jpg" alt="Gallery Image 10" class="img-fluid rounded shadow"/></a></div>
+            <div class="col"><a href="Images/MusicEvent.jpg" target="_blank" aria-label="View Gallery Image 11"><img src="Images/MusicEvent.jpg" alt="Gallery Image 11" class="img-fluid rounded shadow"/></a></div>
+            <div class="col"><a href="Images/98d96cabe641bdc2aac17abcb284f96b.jpg" target="_blank" aria-label="View Gallery Image 12"><img src="Images/98d96cabe641bdc2aac17abcb284f96b.jpg" alt="Gallery Image 12" class="img-fluid rounded shadow"/></a></div>
+          </div>
+          <form id="uploadForm" class="mt-4">
+            <div class="mb-3">
+              <label for="uploadInput" class="form-label">Upload your photo:</label>
+              <input type="file" id="uploadInput" accept="image/*" class="form-control"/>
+            </div>
+          </form>
+      </section>
+      <!-- Intro Video Section --> 
+      <section class="video-section">
+        <div class="container-fluid">
+          <div class="animated-videotext">
+            <h2 class="text-center">Let the flowers and trees build your special memories</h2>
+          </div>
+        </div>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <video autoplay muted loop class="img-fluid rounded shadow">
+                <source src="Videos/5617051-uhd_3840_2160_25fps.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-md-4">
+              <video autoplay muted loop class="img-fluid rounded shadow">
+                <source src="Videos/8419637-uhd_4096_2160_24fps.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="col-md-4">
+              <video autoplay muted loop class="img-fluid rounded shadow">
+                <source src="Videos/12526902_2160_3840_30fps.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+      </section>
+      <!-- Map Section -->
+      <section class="map-section">
+          <h2 class="mb-3">Find Us</h2>
+          <div class="map-container mb-4">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.632071845371!2d35.187332173545435!3d-15.849554024312534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d84be0a5b4ba0f%3A0xa2139a2d27b9a4a!2sNdago!5e1!3m2!1sen!2smw!4v1749731445294!5m2!1sen!2smw" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+      </section>
+      <footer>
+          <div class="comments mb-4">
+            <h3>Comment Below:</h3>
+            <textarea class="form-control" placeholder="Leave your comment here..."></textarea>
+          </div>
+      </footer>  
+</main>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>

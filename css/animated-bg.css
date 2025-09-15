@@ -1,0 +1,131 @@
+/*Index page*/
+.card-gallery {
+  /* Bootstrap flex and gap used, only keep card sizing here */
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 180px;
+  height: 280px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px #0005;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s, box-shadow 0.3s, width 0.3s, height 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+.card.active {
+  width: 260px;
+  height: 340px;
+  z-index: 10;
+  transform: scale(1.1) translateY(-20px);
+  box-shadow: 0 30px 60px #0008;
+}
+.card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.85);
+  color: #fff;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 0 0 20px 20px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.card:not(.active) .card-info {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gallery-nav {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5em;
+  z-index: 3;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: #fff;
+  color: #222;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px #0002;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.nav-btn:hover {
+  background: #eee;
+}
+/*End of index page*/
+
+.animated-bg {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #ffecd2, #fcb69f, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*Animated text should move across the screen*/
+.animated-text h2 {
+  font-size: 2rem;
+  background-color: green;
+  margin-top: 20vh;
+}
+
+.gallery-section h2 {
+  color: #fff;
+}
+/* Text with green background, no animation */
+.animated-videotext {
+  font-size: 2rem;
+  color: #fff;
+  background-color: green;
+  margin-top: 10vh;
+  bottom: 20px;
+}
+.contactLink:active{
+  color: lightgreen;
+}
+.card-body section p{
+  color: #000;
+}
+.card-body section h2{
+  color: green;
+}
+.card-body section hr{
+  color: #000;
+}
+
+.see-more{
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.see-more:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
